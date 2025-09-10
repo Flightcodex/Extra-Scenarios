@@ -1,0 +1,206 @@
+{
+    "aircraftInfo": {
+        "name": "",
+        "path": ""
+    },
+    "commands": [
+        {
+            "create": false,
+            "description": "",
+            "id": 0,
+            "name": "free cam",
+            "path": "sim/view/free_camera"
+        }
+    ],
+    "links": [
+        {
+            "from": 20110,
+            "id": 2,
+            "to": 19932
+        },
+        {
+            "from": 19929,
+            "id": 0,
+            "to": 19874
+        },
+        {
+            "from": 19931,
+            "id": 1,
+            "to": 19930
+        }
+    ],
+    "metaData": {
+        "version": "1.1"
+    },
+    "nodes": [
+        {
+            "data": {
+                "cameraAction": {
+                    "placement": "Geo",
+                    "posAlt": 30.479999542236328,
+                    "posAltIsAGL": false,
+                    "posLat": -22.912905658084902,
+                    "posLon": -43.15967318773236,
+                    "posTime": 0.0,
+                    "trackTime": 0.0,
+                    "tracking": "Acf",
+                    "zoom": "To",
+                    "zoomLevel": 20.0,
+                    "zoomTime": 12.0
+                }
+            },
+            "gridPos": {
+                "x": 960.0,
+                "y": 216.0
+            },
+            "id": 3,
+            "linksFrom": [
+                {
+                    "linkId": 2,
+                    "nodeId": 2
+                }
+            ],
+            "name": "n_3",
+            "pins": [
+                {
+                    "id": 20110,
+                    "type": "Input"
+                },
+                {
+                    "id": 20111,
+                    "type": "Output"
+                }
+            ],
+            "subType": "Camera Ctrl.",
+            "type": "Action"
+        },
+        {
+            "gridPos": {
+                "x": 240.0,
+                "y": 216.0
+            },
+            "id": 0,
+            "linksTo": [
+                {
+                    "linkId": 0,
+                    "nodeId": 1
+                }
+            ],
+            "name": "n_0",
+            "pins": [
+                {
+                    "id": 19874,
+                    "type": "Output"
+                }
+            ],
+            "subType": "Start",
+            "type": "Action"
+        },
+        {
+            "data": {
+                "cmdRefs": {
+                    "free cam": 0
+                }
+            },
+            "gridPos": {
+                "x": 480.0,
+                "y": 216.0
+            },
+            "id": 1,
+            "linksFrom": [
+                {
+                    "linkId": 0,
+                    "nodeId": 0
+                }
+            ],
+            "linksTo": [
+                {
+                    "linkId": 1,
+                    "nodeId": 2
+                }
+            ],
+            "name": "n_1",
+            "pins": [
+                {
+                    "id": 19929,
+                    "type": "Input"
+                },
+                {
+                    "id": 19930,
+                    "type": "Output"
+                }
+            ],
+            "subType": "Command",
+            "type": "Action"
+        },
+        {
+            "data": {
+                "cameraAction": {
+                    "acfLat": -5.400000095367432,
+                    "acfLon": 0.6000000238418579,
+                    "acfVirt": 0.0,
+                    "control": "Start",
+                    "placement": "Acf",
+                    "posTime": 5.0,
+                    "trackTime": 0.0,
+                    "tracking": "Acf"
+                },
+                "delay": 10.0
+            },
+            "gridPos": {
+                "x": 720.0,
+                "y": 216.0
+            },
+            "id": 2,
+            "linksFrom": [
+                {
+                    "linkId": 1,
+                    "nodeId": 1
+                }
+            ],
+            "linksTo": [
+                {
+                    "linkId": 2,
+                    "nodeId": 3
+                }
+            ],
+            "name": "n_2",
+            "pins": [
+                {
+                    "id": 19931,
+                    "type": "Input"
+                },
+                {
+                    "id": 19932,
+                    "type": "Output"
+                }
+            ],
+            "subType": "Camera Ctrl.",
+            "type": "Action"
+        }
+    ],
+    "objects": [
+        {
+            "id": 0,
+            "name": "gate 1",
+            "path": "scenarios/assets/objects/15m_double_gate_hd/15m_double_gate.obj",
+            "pos": {
+                "altIsAGL": true,
+                "altitude": 0.0,
+                "heading": 356.5801696777344,
+                "latitude": -22.91281054775326,
+                "longitude": -43.162681301241186,
+                "pitch": 0.0,
+                "roll": 0.0
+            }
+        }
+    ],
+    "scenarioInfo": {
+        "description": "",
+        "location": "",
+        "name": ""
+    },
+    "startInfo": {
+        "dataFile": "Resources/plugins/FlightCodeX/scenarios/camTutorial/assets/camTutorial_2025-09-09_14-55-20.rep"
+    }
+}

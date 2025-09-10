@@ -1,0 +1,24 @@
+{
+    "CommandRefMap": {
+        "cfree_cam_0": "sim/view/free_camera"
+    },
+    "Objects": {
+        "ogate_1_0": {
+            "altitude": 0.0,
+            "heading": 356.5801696777344,
+            "isAGL": true,
+            "latitude": -22.91281054775326,
+            "longitude": -43.162681301241186,
+            "path": "scenarios/assets/objects/15m_double_gate_hd/15m_double_gate.obj",
+            "pitch": 0.0,
+            "roll": 0.0
+        }
+    },
+    "StartPosition": {
+        "dataFile": "Resources/plugins/FlightCodeX/scenarios/camTutorial/assets/camTutorial_2025-09-09_14-55-20.rep"
+    },
+    "metaData": {
+        "genVer": "v0.1.2",
+        "program": "Flight Code-X Studio"
+    }
+}

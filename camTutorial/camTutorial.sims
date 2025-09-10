@@ -1,0 +1,45 @@
+import("Node")
+import("Utils")
+import("Data")
+import("Cmd")
+import("Camera")
+import("Obj")
+
+def setup() {
+    Node.register("fn_3_3", fn_3_3);
+    Node.register("fn_0_0", fn_0_0);
+    Node.schedule("fn_0_0", NEXT);
+    Node.register("fn_1_1", fn_1_1);
+    Node.register("fn_2_2", fn_2_2);
+}
+
+def loop() {
+    return NOT;
+}
+
+def fn_3_3() { 
+    Camera.TrackAcf(0.0)
+    Camera.PlaceGeo(-22.912905658084902, -43.15967318773236, 30.479999542236328, 0.0);
+    Camera.Zoom(20.0, 12.0);
+    return NOT;
+}
+
+def fn_0_0() { 
+    Node.schedule("fn_1_1", NEXT);
+    return NOT;
+}
+
+def fn_1_1() { 
+    Cmd.trigger("cfree_cam_0");
+    Node.schedule("fn_2_2", NEXT);
+    return NOT;
+}
+
+def fn_2_2() { 
+    Camera.Start();
+    Camera.TrackAcf(0.0)
+    Camera.PlaceAcf(-5.400000095367432, 0.6000000238418579, 0.0, 5.0);
+    Node.schedule("fn_3_3", 10.0f);
+    return NOT;
+}
+
